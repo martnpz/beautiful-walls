@@ -1,11 +1,9 @@
-let modal = document.getElementById('wall')
-let wall = document.getElementsByClassName('.wall1')
-let modalClose = document.getElementsByClassName('.modalFull')
+let wall = document.querySelectorAll('.wall')
+let img = document.getElementsByClassName('.wallpaper')
 
-modal.addEventListener('click', ()=> {
-    modal.classList.add('modalFull')
+wall.forEach((wall) => {
+    wall.addEventListener('click', () => {
+        wall.classList.toggle('modal')
+    })
 })
 
-modalClose.addEventListener('click', ()=> {
-    modal.classList.remove('modalFull')
-})

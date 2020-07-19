@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: .4s ease;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.wall {
+    width: auto;
+}
+
+.modalFull {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(40, 37, 49, 0.473);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    color: wheat;
+    font-size: 3em;
+}
+
